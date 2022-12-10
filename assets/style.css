@@ -9,18 +9,36 @@
 }
 
 header{
+    display:flex;
+    justify-content: center;
     margin: 0;
     padding: 20px;
     text-align: center;
+    letter-spacing: 5px;
+    font-size: 40px;
     background-color: var(--bkgcolor);
     color: var(--textcolor);
-    font-family: Comfortaa,'Trebuchet MS', 'Lucida Sans Unicode', Arial, sans-serif;
+}
+
+h1{
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+/*links to jump down the page without scrolling*/
+header nav{
+    background-color: white;
+    font-size: 10px;
+    margin-top: 10px;
+    line-height: 1.5;
+    letter-spacing: 2px;
 }
 
 /*removes page margin in all directions*/
 body{
     margin: 0;
-    font-family: Lora;
+    font-family:Arial, Helvetica, sans-serif
 }
 
 main{
@@ -29,22 +47,28 @@ main{
     background-repeat: no-repeat;
 }
 
-.detail{
-    display: flex;
-    justify-content: space-between;
-}
-
 h2{
     display: flex;
-    background-color: aliceblue;
+    /*background-color: aliceblue;*/
+    justify-content: flex-end;
     align-items: center;
+    color: var(--textcolor);
+    font-size: 30px;
     width: 25%;
+}
+
+.left{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
 }
 
 .right p{
     display: flex;
     background-color: bisque;
     flex-grow: 4;
+    margin-left: 10px;
+    margin-right: 20px;
 }
 
 footer{
