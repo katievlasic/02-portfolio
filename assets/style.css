@@ -45,27 +45,24 @@ main{
     background-repeat: no-repeat;
 }
 
-h2{
+.left h2{
     display: flex;
+    flex: 0 0 25%;
     justify-content: flex-start;
     align-items: center;
     color: var(--textcolor);
     background-color: black;
     font-size: 30px;
-    width: 30%;
 }
 
 .left{
     display: flex;
     margin-left: 20px;
+    padding: 30px;
 }
 
-.top p{
-    display: flex;
-    background-color: bisque;
-    flex-grow: 4;
-    margin: 20px;
-    /*border-color: #7f007f;*/
+.left p{
+    margin-left: 100px;
 }
 
 .projects{
@@ -75,6 +72,7 @@ h2{
 }
 
 h3{
+    flex: 0 0 25%;
     margin-top: 20px;
     font-size: 30px;
     color: white;
@@ -83,13 +81,19 @@ h3{
 
 .projects header{
     flex-wrap: wrap;
+    flex: 0 0 20%;
     background-color: black;
     color: white;
     font-size: 20px;
 }
 .projects p{
     flex: 1;
+    font-size: 15px;
     background-color: aqua;
+}
+
+#imgsize{
+    width: 200px;
 }
 
 footer{
