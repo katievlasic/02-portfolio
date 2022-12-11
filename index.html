@@ -13,40 +13,45 @@
       <h1>VLASIC PORTFOLIO</h1>
       <nav>
         <ul>
-          <li><a href="#">About Me</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Work Experience</a></li>
-          <li><a href="#">Contact Me</a></li>
+          <li><a href="#AboutMe">About Me</a></li>
+          <li><a href="#Projects">Projects</a></li>
+          <li><a href="#WorkEx">Work Experience</a></li>
+          <li><a href="#ContactMe">Contact Me</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <!--About Me-->
       <section class="left">
-        <h2>About Me</h2>
-        <div>
+        <h2 id="About Me">About Me</h2>
+        <div class="intro">
           <p>
             Welcome to my portfolio page! My name is Katie Vlasic, and I'm an
             avid learner. Originally from Minnesota, I received a B.S. in
             Materials Science and Engineering from the University of Minnesota-
-            Twin Cities. I worked as a fluids offshore of Louisiana in the Gulf
-            of Mexico on drilling rigs and then transitioned into a Quality
-            Engineer role for a window manufacturer. I know - this was quite the
-            transition. Now that I've had exposure to two very different
-            industries, I'm beginning to hone in on what keeps me engaged and
-            it's fixing/ improving anything and everything. With the concepty of
-            Industry 4.0 creeping into view for my company, I'm working towards
-            understanding IoT tools and how to bring teams of varying technology
-            backgrounds together!
+            Twin Cities. I worked as a fluids engineer offshore of Louisiana in
+            the Gulf of Mexico on drilling rigs and then transitioned into a
+            Quality Engineer role for a window manufacturer. I know - this was
+            quite the transition. Now that I've had exposure to two very
+            different industries, I'm beginning to realize that fixing/
+            improving anything and everything keeps me engaged. With the
+            concepty of Industry 4.0 creeping into view for my company, I'm
+            working towards understanding IoT tools and how to bring teams of
+            varying technology backgrounds together!
           </p>
+          <img
+            id="profimg"
+            src="./assets/images/unnamed.jpg"
+            alt="profile picture"
+          />
         </div>
       </section>
       <!--Projects-->
-      <section class="left">
-        <h3>Projects</h3>
+      <section class="projects">
+        <h3 id="Projects">Projects</h3>
         <section>
-          <div class="projects">
-            <header>1: Study Guide</header>
+          <div class="examples">
+            <header>Study Guide</header>
             <p>
               A page created to take notes as a
               <a href="https://katievlasic.github.io/prework-study-guide/"
@@ -56,33 +61,69 @@
               <img
                 id="imgsize"
                 src="./assets/images/Pre-work study guide.jpg"
+                alt="preview of study guide web application"
               />
             </p>
           </div>
-          <div class="projects">
-            <header>2: Landing Page</header>
+          <div class="examples">
+            <header>Landing Page</header>
             <p>Lorem, ipsumdolor sit amet consectetur adipisicing elit.</p>
+            <a
+              href="https://katievlasic.github.io/01-mini-project-landing-page/"
+              >Landing Page</a
+            >
             <img
               id="imgsize"
               src="./assets/images/Landing-Page.jpg"
               alt="preview of project 2"
             />
           </div>
-          <div class="projects">
-            <header>Project 3</header>
+          <div class="examples">
+            <header>Class Challenge</header>
             <p>
-              Lorem ipsum dolor sit. dolor sit amet consectetur adipisicing elit
+              A sample web application was provided and the challenge was to
+              make improvements to the CSS.
             </p>
+            <a href="https://katievlasic.github.io/01-challenge-crf/"
+              >Horiseon Web App</a
+            >
+            <img
+              id="imgsize"
+              src="./assets/images/02-challenge image.png"
+              alt="preview of class web application"
+            />
           </div>
-          <div class="projects">
+          <div class="examples">
             <header>Project 4</header>
             <p>Lorem ipsum dolor sit amet consectetur.</p>
           </div>
         </section>
       </section>
+      <!--Work Experience-->
+      <section class="left">
+        <h4 id="#WorkEx">Work Experience</h4>
+      </section>
+      <!--Contact Me-->
+      <section class="left">
+        <h5 id="#ContactMe">Contact Me</h5>
+        <div class="connect">
+          <form>
+            <p>
+              <label>Connect with me: </label>
+              <input placeholder="me@sample.com" />
+            </p>
+            <button>Submit</button>
+          </form>
+        <img
+            id="imgsize"
+            src="./assets/images/linkedin.png"
+            alt="linkedin profile snapshot"
+          />
+          <a class="link" href="https://www.linkedin.com/in/kathrynvlasic/"
+            >LinkedIn</a
+          ></div>
+      </section>
     </main>
   </body>
-  <footer>
-    <h4>footer</h4>
-  </footer>
+  <footer>footer</footer>
 </html>
