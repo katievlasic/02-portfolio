@@ -7,12 +7,12 @@
 header{
     display:flex;
     justify-content: center;
+    align-items: center;
     margin: 0;
     padding: 40px;
-    text-align: center;
     letter-spacing: 10px;
-    font-size: 40px;
-    background-color: var(--bkgcolor);
+    font-size: 60px;
+    background-color: #FF9933;
     color: var(--textcolor);
 }
 
@@ -24,10 +24,10 @@ h1{
 
 /*links to jump down the page without scrolling*/
 header nav{
-    background-color: white;
-    font-size: 10px;
-    margin-top: 10px;
+    background-color: var(--textcolor);
+    font-size: 15px;
     line-height: 1.5;
+    text-align: center;
     letter-spacing: 2px;
 }
 
@@ -49,7 +49,6 @@ h4,
 h5{
     display: flex;
     flex: 0 0 25%;
-    justify-content: spacer;
     align-items: center;
     color: var(--textcolor);
     font-size: 40px;
@@ -68,15 +67,17 @@ h5{
 }
 
 .intro p{
+    display: flex;
     font-size: 20px;
     line-height: 1.5;
     flex: 0 0 80%;
+    color:#152238;
+    align-items: center;
 }
 
 .intro img{
     width: 200px;
     height: 250px;
-    border-radius: 50%;
     margin-left: 20px;
     justify-content: center;
 }
@@ -88,10 +89,24 @@ h5{
     padding: 30px;
 }
 
+/*first project, study guide, is larger than the rest*/
+.examples:first-child{
+    height: 600px;
+    border: var(--bkgcolor) solid;
+}
+
+#firstimg{
+    height: 300px;
+    margin-top: 150px;
+    margin-left: 20px;
+}
+
 .examples{
     display: flex;
     flex-wrap: wrap;
     padding: 10px;
+    margin: 5px;
+    border: var(--bkgcolor) solid;
 }
 
 .examples header{
@@ -101,18 +116,54 @@ h5{
     background-color: var(--bkgcolor);
     color: white;
     font-size: 25px;
+    justify-content: flex-start;
+}
+
+#text{
+    font-size: 20px;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
 }
 
 .projects p{
-    flex: 1;
+    flex: 0 0 40%;
     font-size: 15px;
-    background-color: #203354;
     color: var(--textcolor)
 }
 
 #imgsize{
-    margin-left: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
     width: 200px;
+    border-radius: 0;
+}
+
+.work{
+    display: flex;
+    flex: 0 0 60%;
+}
+
+.work div{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    line-height: 2;
+    padding: 5px;
+    text-indent: 20px;
+    color: var(--textcolor);
+    background-color: var(--bkgcolor);
+}
+
+.work div ul li:first-child{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.work header{
+    font-size: 30px;
+    margin: 20px;
+    padding: 0;
 }
 
 .connect{
@@ -121,8 +172,18 @@ h5{
     flex: 1;
 }
 
-.connect:hover .link{
-    background-color: black;
+.connect p{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+button{
+    margin: 20px;
+}
+
+.link:hover{
+    background-color: var(--textcolor)
 }
 
 form{
@@ -140,20 +201,25 @@ input:hover{
 }
 
 button:hover{
-    background-color: #000d1a;
+    background-color: var(--bkgcolor);
     color: var(--textcolor);
+    color: gray;
     box-shadow: 0 0 10px aliceblue;
 }
 
 .link{
+    display: flex;
+    align-items: center;
     margin-left: 20px;
+    font-size: 40px;
 }
 
 footer{
-    background-color: #000d1a;
+    background-image: linear-gradient(#152238, #000d1a);
     color: white;
-    font-size: 40px;
+    font-size: 10px;
     padding: 30px;
+    text-align: center;
 }
 
 
