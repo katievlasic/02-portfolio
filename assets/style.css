@@ -1,7 +1,9 @@
 :root{
     /*background-color: #152238;*/
-    --bkgcolor: #152238;
-    --textcolor: aliceblue;
+    --bkgcolor: #13201b;
+    --textcolor: white;
+    --block: #d5d6c2;
+    --block2: 879478;
 }
 
 header{
@@ -10,9 +12,9 @@ header{
     align-items: center;
     margin: 0;
     padding: 40px;
-    letter-spacing: 10px;
-    font-size: 60px;
-    background-color: #FF9933;
+    letter-spacing: 15px;
+    font-size: 80px;
+    background-image: linear-gradient(#e9e9e8,#eeeee3);
     color: var(--textcolor);
 }
 
@@ -24,7 +26,7 @@ h1{
 
 /*links to jump down the page without scrolling*/
 header nav{
-    background-color: var(--textcolor);
+    background-color: var(--block);
     font-size: 15px;
     line-height: 1.5;
     text-align: center;
@@ -39,7 +41,7 @@ body{
 
 main{
     flex-direction: column;
-    background-image: linear-gradient(#ADD8E6,#152238);
+    background-image: linear-gradient(#eeeee3,var(--bkgcolor));
     background-repeat: no-repeat;
 }
 
@@ -48,7 +50,7 @@ h3,
 h4,
 h5{
     display: flex;
-    flex: 0 0 25%;
+    flex: 0 0 20%;
     align-items: center;
     color: var(--textcolor);
     font-size: 40px;
@@ -68,16 +70,17 @@ h5{
 
 .intro p{
     display: flex;
-    font-size: 20px;
+    font-size: 28px;
     line-height: 1.5;
     flex: 0 0 80%;
-    color:#152238;
+    color: var(--bkgcolor);
+    background-color: var(--block);
     align-items: center;
 }
 
 .intro img{
     width: 200px;
-    height: 250px;
+    height: 200px;
     margin-left: 20px;
     justify-content: center;
 }
@@ -97,8 +100,7 @@ h5{
 
 #firstimg{
     height: 300px;
-    margin-top: 150px;
-    margin-left: 20px;
+    position: absolute;
 }
 
 .examples{
@@ -106,15 +108,14 @@ h5{
     flex-wrap: wrap;
     padding: 10px;
     margin: 5px;
-    border: var(--bkgcolor) solid;
+    background-color: var(--bkgcolor);
 }
 
 .examples header{
     flex-wrap: wrap;
     flex: 0 0 20%;
     line-height: 1.5;
-    background-color: var(--bkgcolor);
-    color: white;
+    color: var(--bkgcolor);
     font-size: 25px;
     justify-content: flex-start;
 }
@@ -123,7 +124,7 @@ h5{
     font-size: 20px;
     line-height: 1.5;
     display: flex;
-    align-items: center;
+    justify-content: flex-end;
 }
 
 .projects p{
@@ -166,6 +167,7 @@ h5{
     padding: 0;
 }
 
+/*Contact Me*/
 .connect{
     display: flex;
     flex-wrap: wrap;
@@ -215,11 +217,11 @@ button:hover{
 }
 
 footer{
-    background-image: linear-gradient(#152238, #000d1a);
+    background-image: linear-gradient(var(--bkgcolor), #171c1a);
     color: white;
     font-size: 10px;
     padding: 30px;
-    text-align: center;
+    text-align: right;
 }
 
 
