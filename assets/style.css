@@ -82,13 +82,11 @@ h5{
     width: 200px;
     height: 200px;
     margin-left: 20px;
-    justify-content: center;
 }
 
 .projects{
     display: flex;
     margin-left: 20px;
-    align-items: flex-start;
     padding: 30px;
 }
 
@@ -101,11 +99,11 @@ h5{
 #firstimg{
     height: 300px;
     position: absolute;
+    margin-left: 20px;
 }
 
 .examples{
     display: flex;
-    flex-wrap: wrap;
     padding: 10px;
     margin: 5px;
     background-color: var(--bkgcolor);
@@ -124,6 +122,8 @@ h5{
     font-size: 20px;
     line-height: 1.5;
     display: flex;
+    flex: 1;
+    align-items: flex-end;
     justify-content: flex-end;
 }
 
@@ -137,7 +137,10 @@ h5{
     margin-left: 20px;
     margin-right: 20px;
     width: 200px;
-    border-radius: 0;
+}
+
+#imgsize:hover .examples{
+    visibility: 0.5;
 }
 
 .work{
@@ -165,6 +168,7 @@ h5{
     font-size: 30px;
     margin: 20px;
     padding: 0;
+    color: var(--bkgcolor)
 }
 
 /*Contact Me*/
