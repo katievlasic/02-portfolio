@@ -139,10 +139,6 @@ h5{
     width: 200px;
 }
 
-#imgsize:hover .examples{
-    visibility: 0.5;
-}
-
 .work{
     display: flex;
     flex: 0 0 60%;
@@ -203,7 +199,7 @@ form{
 }
 
 input:hover{
-    background-color:#152238;
+    background-color:var(--bkgcolor);
 }
 
 button:hover{
@@ -223,15 +219,25 @@ button:hover{
 footer{
     background-image: linear-gradient(var(--bkgcolor), #171c1a);
     color: white;
-    font-size: 10px;
+    font-size: 15px;
     padding: 30px;
     text-align: right;
 }
-
 
 @media screen and (max-width: 1000px) {
     .intro img{
         width: 50px;
         height: 60px;
     } 
+    #imgsize{
+        width: 50px;
+        height: 60px;
+    }
+    #firstimg{
+        width: 50px;
+        height: 60px;
+    }
+    header{
+        font-size: 30px;
+    }
 }
