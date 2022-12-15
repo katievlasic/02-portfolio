@@ -73,8 +73,8 @@ h5{
     font-size: 28px;
     line-height: 1.5;
     flex: 0 0 80%;
-    color: var(--bkgcolor);
-    background-color: var(--block);
+    color: var(--block);
+    background-color: var(--bkgcolor);
     align-items: center;
 }
 
@@ -239,5 +239,14 @@ footer{
     }
     header{
         font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 950px){
+    .work{
+        flex-wrap: wrap;
+    }
+    .examples{
+        flex-wrap: wrap;
     }
 }
